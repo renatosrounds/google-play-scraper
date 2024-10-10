@@ -55,4 +55,16 @@ function memoized (opts) {
     R.map(doMemoize, otherMethods));
 }
 
-export default Object.assign({ memoized }, constants, methods);
+methods
+  .app({ appId: 'com.soundcloud.android', lang: 'en', country: 'us' })
+  .then((app) => console.log(app));
+
+const exported = Object.assign({ memoized }, constants, methods);
+
+// CommonJS export
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = exported;
+}
+
+// ESM export
+export default exported;

@@ -3,7 +3,10 @@
   "version": "10.0.0",
   "description": "scrapes app data from google play store",
   "type": "module",
-  "exports": "./index.js",
+  "exports": {
+    "require": "./index.js",
+    "import": "./index.js"
+  },
   "scripts": {
     "test": "mocha --timeout 5000",
     "lint": "eslint ."
