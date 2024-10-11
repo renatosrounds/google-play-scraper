@@ -4,7 +4,7 @@
   "description": "scrapes app data from google play store",
   "type": "module",
   "exports": {
-    "require": "./index.js",
+    "require": "./index.cjs",
     "import": "./index.js"
   },
   "scripts": {
