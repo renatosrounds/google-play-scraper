@@ -55,8 +55,8 @@ function memoized (opts) {
     R.map(doMemoize, otherMethods));
 }
 
-methods
-  .app({ appId: 'com.soundcloud.android', lang: 'en', country: 'us' })
-  .then((app) => console.log(app));
+// methods
+//   .app({ appId: 'com.soundcloud.android', lang: 'en', country: 'us' })
+//   .then((app) => console.log(app));
 
 export default Object.assign({ memoized }, constants, methods);
